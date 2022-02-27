@@ -1,0 +1,27 @@
+*{font-family:FONTNAME;box-sizing: border-box;margin: 0px;padding: 0px;outline: none;border: none;box-sizing: border-box;}html{scroll-behavior: smooth;}
+
+
+/* + + + TEMEL CSS KOD BAŞLANGICI */
+:root{}
+/* TEMEL CSS KOD BİTİŞİ - - - */
+
+/* + + + TELEFON */
+@media screen and (max-width:767px){
+  
+}
+/* TELEFON - - - */
+
+/* + + + TABLET DİK */
+@media screen and (min-width:768px) and (max-width:991px) {
+}
+/* TABLET - - - */
+
+/* + + + TABLET YATAY VE MİNİBOOK LAPTOP*/
+@media screen and (min-width:991px) and (max-width:1199px){
+}
+/* TABLET YATAY VE MİNİBOOK LAPTOP  - - - */
+
+/* + + + BİLGİSAYAR */
+@media screen and (min-width:1200px){
+}
+/* BİLGİSAYAR - - - */
