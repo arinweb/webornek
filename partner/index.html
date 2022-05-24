@@ -173,6 +173,9 @@
         width: 30%;
       }
     }
+
+
+  textarea,.bildirim,#copy-btn{display:none;}
   </style>
 </head>
 <body>
@@ -190,7 +193,7 @@
 
     <b class="bildirim"><i class="fa-solid fa-check"></i>&nbsp;İşbirliği metni Kopyalandı</b>
 
-    <button onclick="kopyala()"><i class="fa-solid fa-copy"></i>Kopyala</button>
+    <button id="copy-btn" onclick="kopyala()"><i class="fa-solid fa-copy"></i>Kopyala</button>
 
     <button onclick="window.location.href ='https://discord.gg/5tCwE4qtUU';"><i class="fa-brands fa-discord"></i>Discord</button>
 
