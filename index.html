@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!--Meta Verileri-->
+  <meta charset="UTF-8">
+  <meta name="author" content="Arin Web | Murat Yiğit">
+  <meta name="description" content="Discord işbirliği metni | Discord Davet Bağlantısı : https://discord.gg/5tCwE4qtUU">
+  <meta name="copyright" content="İzinsiz İşbirliği Metni Kullanılabilir">
+  <meta http-equiv="content-language" content="tr">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#020719">
+  <!--Meta Verileri-->
+  <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/arinweb/images_api/main/aw.png">
+  <!--
+          -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    /*
+        function kopyala() {
+          var metin = document.getElementById("copy-text");
+          metin.value = document.getElementById("metin").value;
+          metin.select();
+          document.execCommand("copy");
+          alert("kopyalandı");
+        }
+
+        /*
+
+        const text = $("#metin");
+        function copyText() {
+          navigator.clipboard.writeText(text.value).then((t) => {});
+          alert("Çalıştı");
+        }
+        text.addEventListener("click", copyText);
+        */
+
+  </script>
+  <title>Arin Web | Davet Linkleri</title>
+  <style>
+    /*img{display:none;}*/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+    * {
+      font-family: Poppins;
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      outline: none;
+      border: none;
+      box-sizing: border-box;
+      transition: 0.5s background;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    .container {
+      background: linear-gradient(0deg,#1e298a74,#000a),url(https://images.pexels.com/photos/3421812/pexels-photo-3421812.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      overflow: auto;
+    }
+    .header{
+      display:flex;
+      align-items:center;
+      justify-content:space-around;
+      flex-direction:column;
+    }
+    .header .logo {
+      width: 15%;
+      margin: 5px;
+      border-radius:50%;
+    }
+    .header h1 {
+      color: white;
+      font-size:1.3rem;
+    }
+    h2 {
+      width: 40%;
+      padding: 10px;
+      background: #7289da;
+      color: white;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: 1.2rem;
+    }
+
+    textarea {
+      width: 40%;
+      border: 4px solid #7289daaa;
+      margin: 1%;
+      font-size: 1rem;
+      border-radius: 5px;
+      color: white;
+      padding: 5px;
+      background: #fff7;
+      user-select: all;
+      display: block;
+      resize: none;
+      max-height: 500px;
+      min-height: 300px;
+    }
+
+
+    #copy-text {
+      height: auto !important;
+      background: #7289daaa;
+      color: white;
+      border-radius: 5px;
+
+      display: none;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      width: 40%;
+      background: #7289da;
+      color: white;
+      margin: 5px;
+      width: 40%;
+    }
+    button:hover {
+      background: #243e98;
+    }
+    button i {
+      font-size: 1.5rem;
+      margin-right: 20px;
+      width: 30px;
+    }
+    .bildirim {
+      display: none;
+      width: 40%;
+      background: #7289da;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 10px;
+    }
+    i {
+      font-family: "Font Awesome 5 Free";
+      font-size: 1.2rem;
+      margin: 5px;
+      font-weight: 1000;
+    }
+@media screen and (max-width:768px) {
+      button,textarea,#copy-text,h2,.bildirim {
+        width: 98%;
+      }
+      .header{
+        padding-top:40px;
+      }
+      .header .logo {
+        width: 30%;
+      }
+    }
+
+
+  textarea,.bildirim,#copy-btn,h2{display:none !important;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://raw.githubusercontent.com/arinweb/images_api/main/aw.png" class="logo" alt="Arin Web Logo" />
+      <h1>Arin Web</h1>
+    </div>
+
+    <h2><i class="fa-solid fa-file-text"></i>Discord İşbirliği Metni</h2>
+
+    <textarea onclick="this.select()" id="metin" multiline="true" disabled></textarea>
+
+    <input onclick="this.select()" id="copy-text" type="text" value="Kopyalanacak Metin" disabled />
+
+    <b class="bildirim"><i class="fa-solid fa-check"></i>&nbsp;İşbirliği metni Kopyalandı</b>
+
+    <button id="copy-btn" onclick="kopyala()"><i class="fa-solid fa-copy"></i>Kopyala</button>
+
+    <button onclick="window.location.href ='https://discord.gg/5tCwE4qtUU';"><i class="fa-brands fa-discord"></i>Discord</button>
+
+    <button onclick="window.location.href ='https://instagram.com/arin_web';"><i class="fa-brands fa-instagram"></i>İnstagram</button>
+
+    <button onclick="window.location.href ='https://codepen.io/ArinWeb';"><i class="fa-brands fa-codepen"></i>Codepen</button>
+
+  </div>
+
+  <script>
+
+
+    var discordMetni = `
+Sende Katıl aramıza 🙂
+
+📌 Instagram
+&lt;https://instagram.com/arin_web&gt;
+
+📌 Codepen
+&lt;https://codepen.io/arinWeb&gt;
+
+
+https://raw.githubusercontent.com/arinweb/images_api/main/davetaciklamasi.png
+
+https://discord.gg/5tCwE4qtUU
+
+@everyone @here
+Sunucu Sahibi : Murat#2861
+    `;
+    $("textarea").html(discordMetni);
+    function kopyala() {
+      //$("body").html($("textarea").html());
+      window.location.href = "partner-txt.html";
+    }
+
+
+  </script>
+
+</body>
+</html>
